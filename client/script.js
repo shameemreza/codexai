@@ -19,7 +19,7 @@ function loader(element) {
 }
 
 function typeText(element, text) {
-  let index = 0
+  let index = 0;
 
   let interval = setInterval(() => {
     if(index < text.length) {
@@ -70,6 +70,9 @@ const handleSubmit = async (e) => {
   // Bot's Chat stripe
   const uniqueId = generateUniqueId();
   chatContainer.innerHTML += chatStripe(true, " ", uniqueId);
+  
+  // to focus scroll to the bottom 
+  chatContainer.scrollTop = chatContainer.scrollHeight;
 
   const messageDiv = document.getElementById(uniqueId);
 
@@ -77,7 +80,7 @@ const handleSubmit = async (e) => {
 
   // Fetch data from server -> Bot's response
 
-  const response = await fetch('http://localhost:5000', {
+  const response = await fetch('https://codexai-bsp2.onrender.com', {
     method: 'POST',
     headers: {
       'Content-Type': 'application/json'
