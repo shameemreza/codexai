@@ -4,6 +4,8 @@ ChatGPT and OpenAI integration using JavaScript
 
 ## How to configure
 
+Before configuring furhter, first run `npm install` in both folder. Once completed, follow the bellow steps:
+
 
 ### OpenAI API configuration
 
