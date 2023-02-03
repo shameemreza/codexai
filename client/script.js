@@ -80,7 +80,7 @@ const handleSubmit = async (e) => {
 
   // Fetch data from server -> Bot's response
 
-  const response = await fetch('https://codexai-bsp2.onrender.com', {
+  const response = await fetch('add server URL here', {
     method: 'POST',
     headers: {
       'Content-Type': 'application/json'
